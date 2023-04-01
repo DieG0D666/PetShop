@@ -1,0 +1,67 @@
+.text-base {
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+h2 {
+    font-family: "Open Sans",sans-serif
+}
+
+.tile_button_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+.offer {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #636363;
+  }
+  
+
+
+  .old-price {
+    font-size: 16px;
+    color: #7a7a7a;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+
+
+
+  .card {
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .card-img-top {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .card-text {
+    font-size: 18px;
+  }
+
+
