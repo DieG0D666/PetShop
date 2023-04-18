@@ -60,15 +60,22 @@
     </header>
   </div>
 
-
-
-
-    <div class="container marketing">
+  <div class="container marketing">
     <br>
     <h1>Registro de cliente</h1>
     <br>
-    <form class="row g-3">
-        <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/300" alt="Imagen de perfil" class="img-fluid">
+        <div class="col-12">
+          <label for="inputImage" class="form-label">Imagen de perfil</label>
+          <input type="file" class="form-control" id="inputImage" accept="image/*">
+        </div>
+
+      </div>
+      <div class="col-md-8">
+        <form class="row g-3">
+          <div class="col-md-6">
             <label for="nombres" class="form-label">Nombres</label>
             <input type="text" class="form-control" id="inputnombres4">
           </div>
@@ -80,12 +87,12 @@
           <label for="inputEmail4" class="form-label">Email</label>
           <input type="email" class="form-control" id="inputEmail4">
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4">
           <label for="rut" class="form-label">Rut</label>
           <input type="text" class="form-control" id="inputrut4">
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
+          <label for="inputAddress" class="form-label">Direccion</label>
           <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>        
         </div>
         <div class="col-md-6">
@@ -104,14 +111,17 @@
             </label>
           </div>
         </div>
-        <div class="col-6">
-          <button type="submit" class="btn btn-secondary">Registrarse</button>
-          <button type="submit" class="btn btn-secondary">Limpiar</button>
-        </div>
-      </form>
+
+          <div class="col-6">
+            <button type="submit" class="btn btn-secondary">Registrarse</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+          </div>
+        </form>
+      </div>
+
     </div>
-    </div>
-    <br>
+  </div>
+  
 <br>
 
     <div class="container">
