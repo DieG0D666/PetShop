@@ -59,33 +59,61 @@
         
 
 
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <div class="card p-4">
-                  <img src="tu-foto-de-perfil.jpg" class="card-img-top rounded-circle mx-auto d-block" alt="Foto de perfil">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">Nombre</h2>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p><strong>Nombre:</strong> <input type="text" class="form-control" id="nombre" value="Juan"></p>
-                        <p><strong>Apellido:</strong> <input type="text" class="form-control" id="apellido" value="Pérez"></p>
-                        <p><strong>Correo electrónico:</strong> <input type="email" class="form-control" id="correo" value="juanperez@gmail.com"></p>
-                        <p><strong>Dirección:</strong> <input type="text" class="form-control" id="direccion" value="Calle Falsa 123"></p>
-                      </div>
-                      <div class="col-md-6">
-                        <p><strong>Subscripción:</strong> <input type="checkbox" id="subscripcion" checked></p>
-                        <p><strong>Contraseña actual:</strong> <input type="password" class="form-control" id="contrasena-actual"></p>
-                        <p><strong>Nueva contraseña:</strong> <input type="password" class="form-control" id="nueva-contrasena"></p>
-                        <button class="btn btn-primary" onclick="actualizarDatos()">Actualizar datos</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-sm-10">
+              <div class="card-body card p-5">
+            
+        <br>
+        <h1>Mis Datos</h1>
+        <br>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <img src="https://via.placeholder.com/300" alt="Imagen de perfil" class="img-fluid">
+            <label for="inputImage" class="form-label">Imagen de perfil</label>
+            <input type="file" class="form-control" id="inputImage" accept="image/*">
+          </div>
+          <div class="col-md-6">
+            <label for="nombres" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="inputNombres4">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="inputApellidos4">
+            <label for="rut" class="form-label">Rut</label>
+            <input type="text" class="form-control" id="inputRut4">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="inputCorreo4">
+          </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Direccion</label>
+              <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>        
+            </div>
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5% de descuento en mis compras.
+                </label>
               </div>
             </div>
-          </div>
-          
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña Actual</label>
+                <input type="password" class="form-control" id="inputContraseña4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Nueva Contraseña</label>
+                <input type="password" class="form-control" id="inputContraseña4">
+              </div>
+              <br>
+            <div class="col-12">
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-secondary">Limpiar</button>
+            </div>
+            <br>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
           
 
 </main>
