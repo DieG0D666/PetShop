@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="/css/xd.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4c462f5131.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -12,140 +13,92 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="js/xd.js"></script>
+    
     </head>
 <body>
 
   <div class="container-lg">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <i class="fa-solid fa-cat fa-2xl" style="color: #747474;"> K u k i </i>
-      </a>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
-        <li><a href="productos.html" class="nav-link px-2 link-dark">Productos</a></li>
-        <li><a href="about.html" class="nav-link px-2 link-dark">Nosotros</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-
-        <button type="button" class="btn btn-outline-secondary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Ingresar
-        </button>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenido</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body p-5 pt-0">
-                <form class="">
-                  <br>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control rounded-3" id="floatinghInput" placeholder="name@example.com">
-                    <label for="floatingInput">Correo</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control rounded-3" id="floatingPhassword" placeholder="Password">
-                    <label for="floatingPassword">Contraseña</label>
-                  </div>
-                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-secondary" type="submit">Iniciar sesión</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a type="button" href="register.html" class="btn btn-secondary">Registrarse</a>
-      </div>
+     <div id="menu" name="menu">
+      
+     </div>
     </header>
   </div>
 
 
 
-
-  <div class="container marketing card p-5">
-
-
-    <br>
-    <h1>Registro de cliente</h1>
-    <br>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="https://via.placeholder.com/300" alt="Imagen de perfil" class="img-fluid">
-      </div>
-
-      <div class="col-md-8">
-        <form method="POST" id="formreg" class="row g-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-sm-10">
+        <h1>Registro de cliente</h1>
+        <br>
+        <div class="card-body card p-5">
+          <div class="col-md-12 text-center">
+            <img src="https://via.placeholder.com/300" alt="Imagen de perfil" class="img-fluid">
+          </div>
+          <form method="POST" id="formreg" class="row g-3">
+            <div class="col-12">
+              <label for="inputImage" class="form-label">Imagen de perfil</label>
+              <input type="file" class="form-control" id="inputImage" name="inputImage" accept="image/*">
+            </div>
+            <div class="col-md-6">
+              <label for="nombres" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="inputnombres4" name="inputnombres4">
+            </div>
+          <div class="col-md-6">
+              <label for="apellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="inputapellidos4" name="inputapellidos4">
+            </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" name="inputEmail4">
+          </div>
+          <div class="col-md-4">
+            <label for="rut" class="form-label">Rut</label>
+            <input type="text" class="form-control" id="inputrut4" name="inputrut4">
+          </div>
           <div class="col-12">
-            <label for="inputImage" class="form-label">Imagen de perfil</label>
-            <input type="file" class="form-control" id="inputImage" accept="image/*">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <textarea class="form-control" id="floatingTextarea2" name="floatingTextarea2" style="height: 100px"></textarea>        
           </div>
           <div class="col-md-6">
-            <label for="nombres" class="form-label">Nombres</label>
-            <input type="text" class="form-control" id="inputnombres4" name="inputnombres4">
+              <label for="inputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword1" name="inputPassword1">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Repetir contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4" name="inputPassword4">
+            </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5% de descuento en mis compras.
+              </label>
+            </div>
           </div>
-        <div class="col-md-6">
-            <label for="apellidos" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="inputapellidos4" name="inputapellidos4">
+  
+          <div class="col-12">
+            <button type="submit" class="btn btn-secondary">Actualizar</button>
+            <button type="submit" class="btn btn-secondary">Limpiar</button>
           </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" name="inputEmail4">
-        </div>
-        <div class="col-md-4">
-          <label for="rut" class="form-label">Rut</label>
-          <input type="text" class="form-control" id="inputrut4" name="inputrut4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Dirección</label>
-          <textarea class="form-control" id="floatingTextarea2" name="floatingTextarea2" style="height: 100px"></textarea>        
-        </div>
-        <div class="col-md-6">
-            <label for="inputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword1" name="inputPassword1">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Repetir contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4" name="inputPassword4">
-          </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5% de descuento en mis compras.
-            </label>
-          </div>
-        </div>
+          </form>
 
-          <div class="col-6">
-            <button type="submit" class="btn btn-secondary">Registrarse</button>
-            <button type="reset" class="btn btn-secondary">Limpiar</button>
-          </div>
-        </form>
+        </div>
       </div>
-
     </div>
   </div>
+
+
+
+
   
 <br>
 
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Kuki Store, Inc</span>
-        </div>
-  
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #747474;"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #747474;" ></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.google.cl/maps/preview" target="_blank"><i class="fa-solid fa-location-dot fa-xl" style="color: #747474;"></i> Calle falsa #666</a></li>
-        </ul>
-      </footer>
-    </div>
+<div class="container">
+  <div id="footer" name="footer">
+
+  </div>
+</div>
 </body>
 </html>
