@@ -81,3 +81,21 @@ h2 {
 .text-cortado:hover {
   white-space: normal;
 }
+
+div {
+  margin-bottom: 10px;
+}
+
+input:invalid + span:after {
+  content: "Cantidad incorrecta";
+  padding-left: 5px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: red;
+  border-image: initial;
+}
+
+input:valid + span:after {
+  content: "";
+  padding-left: 5px;
+}
