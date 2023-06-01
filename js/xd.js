@@ -55,6 +55,7 @@ $(document).ready(function(){
     // Validar que el dígito verificador sea correcto
     return dv === lastChar;
   }, "Por favor ingrese un RUT válido."); 
+});
 
 
 
@@ -241,6 +242,12 @@ $(document).ready(function() {
         precio: {
           required: true,
         },
+        descSubscriptor: {
+          required: true,
+        },
+        descOferta: {
+          required: true,
+        },
         imagen: {
           required: true,
         },
@@ -260,6 +267,13 @@ $(document).ready(function() {
         },
         precio: {
           required: "Por favor ingresa un precio",
+        },
+        descSubscriptor: {
+          required: "Por favor ingrese descuento, si es que no tiene digite con un 0",
+
+        },
+        descOferta: {
+          required: "Por favor ingrese descuento, si es que no tiene digite con un 0",
         },
         imagen: {
           required: "Por favor ingresa una imagen",
@@ -332,10 +346,7 @@ $(document).ready(function() {
 });
 
 
-
-
-
-
+$(document).ready(function() {
   $("#formmdatos").validate({
       rules:{
       inputNombres4: {

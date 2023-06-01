@@ -41,12 +41,18 @@
                 <form id="formprod">
                   <div class="form-group">
                     <label for="productoId">ID de producto</label>
-                    <input type="text" class="form-control" id="productoId" name="productoId">
+                    <input type="number" class="form-control" id="productoId" name="productoId">
                   </div>
-                  <div class="form-group">
-                    <label for="categoria">Categoría</label>
-                    <input type="text" class="form-control" id="categoria" name="categoria">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="nombre">categoria</label>
+                      <select class="form-control" id="categoria">
+                        <option value="producto1">Perros</option>
+                        <option value="producto2">Gatos</option>
+                      </select>
+                    </div>
                   </div>
+
                   <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre">
@@ -67,6 +73,7 @@
                     <label for="descOferta">Descuento oferta (%)</label>
                     <input type="text" class="form-control" id="descOferta" name="descOferta">
                   </div>
+                  <br>
                   <div class="form-group">
                     <label for="imagen">Imagen</label>
                     <input type="file" class="form-control-file" id="imagen" name="imagen">
@@ -144,4 +151,5 @@
 </div>
 
   </body>
+
 </html>
