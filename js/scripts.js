@@ -239,6 +239,12 @@ $(document).ready(function() {
         precio: {
           required: true,
         },
+        descSubscriptor: {
+          required: true,
+        },
+        descOferta: {
+          required: true,
+        },
         imagen: {
           required: true,
         },
@@ -255,6 +261,12 @@ $(document).ready(function() {
         },
         precio: {
           required: "Por favor ingresa un precio",
+        },
+        descSubscriptor: {
+          required: "Por favor ingresa un porcentaje de descuento",
+        },
+        descOferta: {
+          required: "Por favor ingresa un porcentaje de descuento",
         },
         imagen: {
           required: "Por favor ingresa una imagen",
