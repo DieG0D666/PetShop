@@ -55,6 +55,7 @@ $(document).ready(function(){
     // Validar que el dígito verificador sea correcto
     return dv === lastChar;
   }, "Por favor ingrese un RUT válido."); 
+});
 
 
 
@@ -229,9 +230,6 @@ $(document).ready(function() {
         productoId: {
           required: true,
         },
-        categoria: {
-          required: true,
-        },
         nombre: {
           required: true,
         },
@@ -248,9 +246,6 @@ $(document).ready(function() {
       messages: {
         productoId: {
           required: "Por favor ingresa una ID",
-        },
-        categoria: {
-          required: "Por favor ingresa una categoría",
         },
         nombre: {
           required: "Por favor ingresa un nombre",
@@ -328,67 +323,80 @@ $(document).ready(function() {
           required: "Por favor ingresa una imagen",
         },
       },
-    });
+  });
 });
 
 
-
-
-
-
+$(document).ready(function() {
   $("#formmdatos").validate({
-      rules:{
-      inputNombres4: {
-          required:true,
-      },
-      inputApellidos4: {
-          required: true,
-      },
-      inputRut4: {
-          required: true,
-          rutChileno: true,
-      },
-      inputCorreo4: {
-          required: true,
-          email: true,
-      },
-      floatingTextarea2: {
-          required: true,
-      },
-      inputContraseña1: {
-          required: true,
-          minlength: 6,
-      },
-      inputContraseña4: {
-          required: true,
-          equalTo: "#inputContraseña1",
-      },
-  },
-  messages: {
-      inputNombres4: {
-          required: "Ingrese su Nombre",
-      },
-      inputApellidos4: {
-          required: "Ingrese su Apellido",
-      },
-      inputRut4: {
-          required: "Ingrese su Rut",
-      },
-      inputCorreo4:{
-          required: "Ingrese su correo",
-          email: "Ingrese un correo valido",
-      },
-      floatingTextarea2:{
-          required: "Ingrese una Direccion valida",
-      },
-      inputContraseña1:{
-          required: "Por favor ingresa una contraseña",
-          minlength: "La contraseña debe tener al menos 6 caracteres",
-      },
-      inputContraseña4: {
-          required: "Por favor confirma tu contraseña",
-          equalTo: "Las contraseñas no coinciden",
-      },
-  },
+        rules:{
+        inputNombres4: {
+            required:true,
+        },
+        inputApellidos4: {
+            required: true,
+        },
+        inputRut4: {
+            required: true,
+            rutChileno: true,
+        },
+        inputCorreo4: {
+            required: true,
+            email: true,
+        },
+        floatingTextarea2: {
+            required: true,
+        },
+        inputContraseña1: {
+            required: true,
+            minlength: 6,
+        },
+        inputContraseña4: {
+            required: true,
+            equalTo: "#inputContraseña1",
+        },
+    },
+    messages: {
+        inputNombres4: {
+            required: "Ingrese su Nombre",
+        },
+        inputApellidos4: {
+            required: "Ingrese su Apellido",
+        },
+        inputRut4: {
+            required: "Ingrese su Rut",
+        },
+        inputCorreo4:{
+            required: "Ingrese su correo",
+            email: "Ingrese un correo valido",
+        },
+        floatingTextarea2:{
+            required: "Ingrese una Direccion valida",
+        },
+        inputContraseña1:{
+            required: "Por favor ingresa una contraseña",
+            minlength: "La contraseña debe tener al menos 6 caracteres",
+        },
+        inputContraseña4: {
+            required: "Por favor confirma tu contraseña",
+            equalTo: "Las contraseñas no coinciden",
+        },
+    },
+  });
+});
+
+
+$(document).ready(function() {
+  $("#formbode").validate({
+        rules:{
+          cantidad: {
+            required:true,
+        },
+    },
+    messages: {
+      cantidad: {
+            required: "Ingrese un valor",
+        },
+    },
   });
 });
